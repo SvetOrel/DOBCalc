@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Calculate Your"
-        android:textColor="@color/textOrange"
+        android:textColor="@color/textColor"
         android:textSize="35sp"
         android:textStyle="bold"/>
 
@@ -35,24 +35,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="In Minutes"
-        android:textColor="@color/textOrange"
+        android:textColor="@color/textColor"
         android:textSize="35sp"
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="SELECT DATE"
+        android:textSize="18sp"
+        android:padding="20dp"
         android:backgroundTint="@color/ageBgColor"/>
 
     <TextView
+        android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:paddingTop="25dp"
         android:textColor="@color/dateTimeText"
-        android:text="06/09/1990" />
+        android:text="" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,9 +68,11 @@
         android:textColor="@color/smallText"/>
 
     <TextView
+        android:id="@+id/tvAgeInMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="35sp"
+        android:textStyle="bold"
         android:paddingTop="15dp"
         android:textColor="@color/dateTimeText"
         android:text="" />
@@ -78,6 +84,24 @@
         android:textSize="25sp"
         android:padding="10dp"
         android:text="In Minutes till Date"
+        android:textColor="@color/smallText" />
+
+    <TextView
+        android:id="@+id/tvAgeInHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:textColor="@color/dateTimeText"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:text="In Hours till Date"
         android:textColor="@color/smallText" />
 
 </LinearLayout>
